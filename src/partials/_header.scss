@@ -1,10 +1,14 @@
 
 header {
     background-color: $top_color;
+    ul li {
+        display: inline-block;
+    }
 }
 
 .top-head ul li {
     a {
+        color: $cta_text;
         display: inline-block;
         padding: $main_size*1.5;
     }

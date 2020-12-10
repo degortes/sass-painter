@@ -27,9 +27,13 @@
     float: left;
 }
 
+.col-4 {
+    float: left;
+    width: calc(100% /3);
+}
 .col-5 {
     float: left;
-    width: 100% /12 * 5
+    width: calc(100% /12 * 5);
 }
 .col-6 {
     float: left;
@@ -37,7 +41,11 @@
 }
 .col-7 {
     float: left;
-    width: 100% /12 * 7
+    width: calc(100% /12 * 7);
+}
+.col-8 {
+    float: left;
+    width: calc(100% / 3 * 2);
 }
 .col-12 {
     float: left;
@@ -54,28 +62,25 @@
     text-align: right;
 }
 h1 {
-    font-size: $text_size*1.5;
+    font-size: $text_size+$link_size;
 }
 
 h2 {
     font-size: $text_size*2;
 }
 
-h3 {
-
-    font-size: $text_size*2;
-}
 
 p {
     font-size: $text_size;
 }
 
 a {
+    color: $sec_color;
+    display: inline-block;
     font-size: $link_size;
     text-decoration: none;
-    color: $cta_text;
 }
 
-ul li {
-    display: inline-block;
+ul {
+    list-style-type: none;
 }
