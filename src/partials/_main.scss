@@ -1,15 +1,29 @@
 #jumbo {
     line-height: $line_h;
     background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    h3 {
+        padding-bottom: $main_space;
+    }
     .col-8 {
-        color: $sec_color;
-        padding: $main_space 10%;
-        i {
-            color: $nav-icons;
+        li {
+            padding: $main_size/2 0;
         }
+        color: $sec_color;
+        padding: $main_space 0 $main_space 20%;
         .btn-download {
+            p {
+                font-size: 14px;
+            }
+            padding: $main_size $main_space;
+            margin: $main_space 0;
             display: inline-block;
             background-color: $download_btn;
+            i {
+                padding: $main_space;
+            }
             div{
                 @include flex(column, center);
             }
@@ -20,21 +34,26 @@
     }
     .col-4 {
         .prime-card {
+            min-height: 440px;
             color: $sec_color;
-            margin: $main_space;
-            padding: $main_size;
+            margin: $main_space 0 0;
+            padding: $main_space $main_size*1.5 $main_space*5;
             background-color: $jumbo_card_back;
-            a {
+            .btn{
+                margin: $main_space 0;
                 padding: $main_size $main_space;
                 background-color: $cta_icon;
             }
             .sec-card {
+                padding: $main_size;
                 color: $jumbo_sec_text;
                 background-color: $sec_color;
                 a {
                     background-color: transparent;
-
                     color: $cta_icon;
+                }
+                p {
+                    font-size: 14px;
                 }
             }
         }

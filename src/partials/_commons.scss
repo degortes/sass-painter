@@ -61,10 +61,28 @@
 .text-right {
     text-align: right;
 }
-h1 {
-    font-size: $text_size+$link_size;
-}
 
+.text-low {
+    text-transform: lowercase;
+
+}
+.text-upp {
+    text-transform: uppercase;
+
+}
+.text-cap {
+    text-transform: capitalize;
+
+}
+h1 {
+    font-weight: normal;
+    font-size: $text_size+$link_size;
+    padding: $main_space 0;
+}
+h3 {
+    font-weight: normal;
+
+}
 h2 {
     font-size: $text_size*2;
 }
