@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.f-right {
+  float: right;
+}
+
+.f-left {
+  float: left;
+}
+
+.col-5 {
+  float: left;
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+}
+
+.col-7 {
+  float: left;
+  width: 58.3333333333%;
+}
+
+.col-12 {
+  float: left;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #989898;
+}
+
+ul li {
+  display: inline-block;
+}
+
+header {
+  background-color: #101010;
+}
+
+.top-head ul li a {
+  display: inline-block;
+  padding: 15px;
+}
+
+.top-head ul li i {
+  color: #009cff;
+  padding-right: 10px;
+}
+
+.low-head {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.low-head .logo img {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.low-head li a {
+  padding: 10px 20px;
+  color: #FFF;
+}
+
+.low-head li a i {
+  color: #878787;
+}
+

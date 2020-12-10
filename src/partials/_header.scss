@@ -1,0 +1,34 @@
+
+header {
+    background-color: $top_color;
+}
+
+.top-head ul li {
+    a {
+        display: inline-block;
+        padding: $main_size*1.5;
+    }
+    i {
+        color: $cta_icon;
+        padding-right: $main_size;
+    }
+}
+
+.low-head {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .logo img {
+        height: 24px;
+        margin-right: $main_size;
+    }
+    li a {
+        padding: $main_size $main_space;
+        color: $sec_color;
+        i {
+            color: $nav-icons;
+        }
+    }
+}
