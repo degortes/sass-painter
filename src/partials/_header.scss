@@ -10,11 +10,11 @@ header {
     a {
         color: $cta_text;
         display: inline-block;
-        padding: $main_size*1.5;
+        padding: $main_space/1.3;
     }
     i {
         color: $cta_icon;
-        padding-right: $main_size;
+        padding-right: $main_space/2;
     }
 }
 
@@ -26,7 +26,7 @@ header {
     align-items: center;
     .logo img {
         height: 24px;
-        margin-right: $main_size;
+        margin-right: $main_space/2;
     }
     li a {
         padding: $main_size $main_space;

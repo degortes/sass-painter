@@ -85,6 +85,11 @@ h3 {
 }
 h2 {
     font-size: $text_size*2;
+    margin: $main_space*4  0 $main_space;
+}
+
+h2 + p + p{
+    margin: $main_space;
 }
 
 

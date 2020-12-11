@@ -9,7 +9,10 @@
     }
     .col-8 {
         li {
-            padding: $main_size/2 0;
+            padding: $main_space/4 0;
+            i {
+                color: grey;
+            }
         }
         color: $sec_color;
         padding: $main_space 0 $main_space 20%;
@@ -17,12 +20,13 @@
             p {
                 font-size: 14px;
             }
-            padding: $main_size $main_space;
+            padding: $main_space/2 $main_space/1.3;
             margin: $main_space 0;
             display: inline-block;
             background-color: $download_btn;
             i {
-                padding: $main_space;
+                padding: 0 $main_space/2;
+                font-size: 25px;
             }
             div{
                 @include flex(column, center);
@@ -37,15 +41,15 @@
             min-height: 440px;
             color: $sec_color;
             margin: $main_space 0 0;
-            padding: $main_space $main_size*1.5 $main_space*5;
+            padding: $main_space $main_space/1.3 $main_space*5;
             background-color: $jumbo_card_back;
             .btn{
                 margin: $main_space 0;
-                padding: $main_size $main_space;
+                padding: $main_space/2 $main_space;
                 background-color: $cta_icon;
             }
             .sec-card {
-                padding: $main_size;
+                padding: $main_space/2;
                 color: $jumbo_sec_text;
                 background-color: $sec_color;
                 a {
@@ -59,4 +63,90 @@
         }
 
     }
+    .author {
+        color: $author;
+    }
+}
+
+#din-bar {
+    padding-left: $main_space*1.5;
+    background-color: $mid_bar;
+    ul li {
+        display: inline-block;
+        padding: $main_space/2 $main_space;
+        &.active {
+            border-bottom: 3px solid black;
+        }
+    }
+}
+
+#ideal {
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: $line_h;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
+    h2,p {
+        color: $sec_color;
+    }
+}
+
+.title {
+    padding: 0 10%;
+}
+
+.img-container {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: auto;
+    .intro-ui {
+        position: absolute;
+        max-width: 100%;
+        bottom: 0;
+        max-height: 570px;
+    }
+    .outro-ui {
+        max-height: 570px;
+        border-radius: 20px 20px 0 0;
+        max-width: calc(100% - 13px);
+        vertical-align: bottom;
+
+    }
+}
+
+#dis-ai {
+    .img-container {
+        @include flex(row, center);
+        margin: $main_space*4 0;
+        align-items: center;
+    }
+    .intro-ui {
+        max-width: calc(100% - 100px);
+        position: relative;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $arrows;
+        border: none;
+        color: $sec_color;
+        font-size: $text_size;
+        line-height: 30px;
+    }
+    .btn-right {
+        margin-left: $main_space
+    }
+    .btn-left {
+        margin-right: $main_space
+    }
+
+}
+
+
+#gogh {
+    height: 650px;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
