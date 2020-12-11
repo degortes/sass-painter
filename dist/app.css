@@ -369,14 +369,48 @@ header ul li {
 }
 
 #tools .playlist {
+  margin-bottom: 80px;
+  margin-top: 60px;
+  padding: 0 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 #tools .playlist img {
   max-height: 300px;
-  margin: 0 20px;
+}
+
+#tools .img-container {
+  max-width: 20%;
+}
+
+#tools .img-container img {
+  width: 100%;
+  padding: 0 15px;
+}
+
+#explore {
+  padding: 100px 0;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+}
+
+#explore h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#explore .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#explore .card {
+  margin: 20px;
+  background-color: #FFF;
+  padding: 60px 40px 80px;
+  width: 400px;
+  display: inline-block;
 }
 
