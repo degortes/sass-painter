@@ -100,7 +100,7 @@ h2 {
 }
 
 h2 + p + p {
-  margin: 20px;
+  margin: 20px 0 60px;
 }
 
 p {
@@ -296,10 +296,10 @@ header ul li {
 }
 
 #dis-ai .img-container {
+  margin: 80px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 80px 0;
   align-items: center;
 }
 
@@ -333,5 +333,50 @@ header ul li {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-attachment: fixed;
+}
+
+#flexible {
+  color: #FFF;
+  background-color: #222;
+}
+
+#flexible .flex-img {
+  width: 100%;
+}
+
+#flexible img {
+  max-width: 770px;
+  width: 100%;
+  padding: 80px 10px;
+}
+
+#flexible h3 {
+  font-size: 24px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+#flexible .paraflex {
+  padding: 10% 20px;
+}
+
+#eye {
+  height: 650px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+#tools .playlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tools .playlist img {
+  max-height: 300px;
+  margin: 0 20px;
 }
 

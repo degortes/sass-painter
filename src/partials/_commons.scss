@@ -89,7 +89,7 @@ h2 {
 }
 
 h2 + p + p{
-    margin: $main_space;
+    margin: $main_space 0 $main_space*3;
 }
 
 

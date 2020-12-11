@@ -115,8 +115,8 @@
 
 #dis-ai {
     .img-container {
+        margin: $main_space*4 auto;
         @include flex(row, center);
-        margin: $main_space*4 0;
         align-items: center;
     }
     .intro-ui {
@@ -149,4 +149,46 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
+}
+
+
+#flexible {
+    color: $sec_color;
+    background-color: $tools_back;
+    .flex-img {
+        width: 100%
+    }
+    img {
+        max-width: 770px;
+        width: 100%;
+        padding: $main_space*4 $main_space/2;
+    }
+    h3 {
+        font-size: $text_size*4/3;
+        margin-top: $main_space*4;
+        margin-bottom: $main_space;
+    }
+    .paraflex {
+        padding: 10% $main_space;;
+    }
+}
+
+#eye {
+    height: 650px;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+
+}
+
+#tools {
+    .playlist {
+        @include flex(row, center);
+        flex-wrap: wrap;
+        img {
+            max-height: 300px;
+            margin: 0 $main_space;
+        }
+    }
 }
