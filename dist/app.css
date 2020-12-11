@@ -30,6 +30,11 @@
   float: left;
 }
 
+.col-3 {
+  float: left;
+  width: calc(100% /4);
+}
+
 .col-4 {
   float: left;
   width: calc(100% /3);
@@ -159,12 +164,84 @@ header ul li {
   color: #878787;
 }
 
+footer .top-foot {
+  padding: 40px 20px 30px;
+  background-color: #ececec;
+}
+
+footer .low-foot {
+  padding: 10px 0 20px;
+  background-color: #1e1e1e;
+}
+
+footer a {
+  line-height: 2;
+  color: #4d4d4d;
+}
+
+footer h4 {
+  margin: 20px 0 10px;
+  color: black;
+}
+
+footer .icon-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer .icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+footer .icon-container i {
+  font-size: 32px;
+}
+
+footer .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logos img {
+  margin: 0 10px;
+}
+
+footer .other ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #999;
+}
+
+footer .other ul li {
+  line-height: 2;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+footer .other ul li a {
+  color: #FFF;
+}
+
 #jumbo {
   line-height: 1.5;
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+}
+
+#jumbo h2 {
+  margin-top: 20px;
 }
 
 #jumbo h3 {
@@ -246,17 +323,21 @@ header ul li {
 }
 
 #din-bar {
-  padding-left: 30px;
+  padding-left: 40px;
   background-color: #E6E6E6;
 }
 
 #din-bar ul li {
+  font-size: 18px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15.3846153846px 20px;
 }
 
 #din-bar ul li.active {
   border-bottom: 3px solid black;
+  border-top: 3px solid transparent;
 }
 
 #ideal {

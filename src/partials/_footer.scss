@@ -1,0 +1,55 @@
+
+footer {
+
+    .top-foot {
+        padding: $main_space*2 $main_space $main_space*1.5;
+        background-color: $section_sec_color;
+
+    }
+    .low-foot {
+        padding: $main_space/2 0 $main_space;
+        background-color: $foot_sec_text;
+    }
+    a {
+        line-height: 2;
+        color: $third_content_color;
+    }
+    h4 {
+        margin: $main_space 0 $main_space/2;
+        color: black;
+    }
+    .icon-box {
+        margin-top: $main_space;
+        @include flex(row, flex-start);
+    }
+
+    .icon-container {
+        @include flex(row, center);
+        width: 32px;
+        height: 32px;
+        margin-right:$main_space/2;
+        i {
+            font-size: 32px;
+
+        }
+    }
+    .flex-container {
+        @include flex(row, space-between);
+        align-items: center;
+    }
+    .logos img {
+        margin: 0 $main_space/2;
+    }
+    .other ul {
+        @include flex(row, flex-end);
+        color: $contact_color;
+        li {
+            line-height: 2;
+            font-size: $link_size;
+            padding: $main_space/2 $main_space;
+            a {
+                color: $sec_color;
+            }
+        }
+    }
+}
