@@ -17,6 +17,7 @@ footer {
     h4 {
         margin: $main_space 0 $main_space/2;
         color: black;
+        font-weight: normal;
     }
     .icon-box {
         margin-top: $main_space;
@@ -24,12 +25,17 @@ footer {
     }
 
     .icon-container {
-        @include flex(row, center);
-        width: 32px;
-        height: 32px;
+        a {
+            @include flex(row, center);
+            align-items: center;
+            width: 32px;
+            height: 32px;
+
+        }
         margin-right:$main_space/2;
         i {
-            font-size: 32px;
+            font-size: 22px;
+            color: $sec_color;
 
         }
     }
@@ -52,4 +58,23 @@ footer {
             }
         }
     }
+}
+
+.instagram {
+    background-color: #cf3a56;
+}
+.facebook {
+    background-color: #3b5998;
+}
+.twitter {
+    background-color:#1da1f2;
+}
+.youtube {
+    background-color:#cd201f;
+}
+.pinterest{
+    background-color: #bd081c;
+}
+.rss {
+    background-color: #ff8d00;
 }

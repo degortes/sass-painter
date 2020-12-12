@@ -1,4 +1,5 @@
 #jumbo {
+    position: relative;
     line-height: $line_h;
     background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
     background-repeat: no-repeat;
@@ -6,6 +7,8 @@
     background-position: top center;
     h2 {
         margin-top: $main_space;
+        font-size: $text_size*1.5;
+        font-weight: normal;
     }
     h3 {
         padding-bottom: $main_space;
@@ -20,19 +23,23 @@
         color: $sec_color;
         padding: $main_space 0 $main_space 20%;
         .btn-download {
-            p {
-                font-size: 14px;
-            }
             padding: $main_space/2 $main_space/1.3;
             margin: $main_space 0;
             display: inline-block;
             background-color: $download_btn;
+            p {
+                font-size: 14px;
+            }
             i {
-                padding: 0 $main_space/2;
+                padding-left: $main_space/1.3;
                 font-size: 25px;
             }
             div{
                 @include flex(column, center);
+            }
+            .left-btn {
+                padding-right: $main_space/2;
+                border-right: 1px solid $sec_color;
             }
             a {
                 @include flex(row, flex-start);
@@ -46,10 +53,16 @@
             margin: $main_space 0 0;
             padding: $main_space $main_space/1.3 $main_space*5;
             background-color: $jumbo_card_back;
+            p {
+                color: $contact_color;
+            }
             .btn{
+                font-size: 15px;
+                min-height: 42px;
                 margin: $main_space 0;
                 padding: $main_space/2 $main_space;
                 background-color: $cta_icon;
+                min-width: 150px;
             }
             .sec-card {
                 padding: $main_space/2;
@@ -67,7 +80,11 @@
 
     }
     .author {
+        width: 300px;
+        font-size: $main_size;
         color: $author;
+        position: absolute;
+        bottom: $main_space/2;
     }
 }
 
@@ -88,6 +105,7 @@
 }
 
 #ideal {
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: $line_h;
@@ -95,8 +113,22 @@
     h2,p {
         color: $sec_color;
     }
+    p img {
+        vertical-align: middle;
+        margin-right: $main_space;
+    }
+    .play-hover,.play-hide {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+    }
+
 }
 
+.play-hide {
+    display: none;
+}
 .title {
     padding: 0 10%;
 }
@@ -118,6 +150,13 @@
         vertical-align: bottom;
 
     }
+    &:hover .play-hide {
+        display: block;
+    }
+    &:hover .play-hover {
+        display: none;
+    }
+
 }
 
 #dis-ai {
@@ -198,12 +237,26 @@
         img {
             max-height: 300px;
         }
+        h3 {
+            font-size:$text_size*1.2;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            color: white;
+            transform: translateX(-50%);
+        }
     }
     .img-container {
+        overflow: hidden;
+        position: relative;
         max-width: 20%;
+        margin: 0 $main_space/2*1.5;
         img {
+            display: block;
             width: 100%;
-            padding: 0 $main_space/2*1.5;
+        }
+        &:hover img {
+            transform: scale(1.2);
         }
     }
 }

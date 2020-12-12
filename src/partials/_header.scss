@@ -19,7 +19,6 @@ header {
 }
 
 .low-head {
-    height: 50px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -29,7 +28,7 @@ header {
         margin-right: $main_space/2;
     }
     li a {
-        padding: $main_size $main_space;
+        padding: $main_space/1.3 $main_space*1.3;
         color: $sec_color;
         i {
             color: $nav-icons;
