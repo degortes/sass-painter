@@ -384,6 +384,13 @@ footer .other ul li a {
   bottom: 10px;
 }
 
+#din-bar.sticky {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 9;
+}
+
 #din-bar {
   padding-left: 40px;
   background-color: #E6E6E6;

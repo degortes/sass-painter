@@ -87,7 +87,12 @@
         bottom: $main_space/2;
     }
 }
-
+#din-bar.sticky {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 9;
+}
 #din-bar {
     padding-left: $main_space*2;
     background-color: $mid_bar;
