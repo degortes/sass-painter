@@ -356,7 +356,7 @@ footer .other ul li a {
 #jumbo .col-4 .prime-card p {
   color: #999;
 }
-#jumbo .col-4 .prime-card .btn {
+#jumbo .col-4 .prime-card p .btn {
   font-size: 15px;
   min-height: 42px;
   margin: 20px 0;
@@ -390,17 +390,37 @@ footer .other ul li a {
   top: 0;
   z-index: 9;
 }
+#din-bar.sticky .fix-show {
+  display: inline-block;
+}
+#din-bar.sticky .fix-show.btn {
+  position: absolute;
+  right: 0;
+  border-top: 3px solid #009cff;
+  border-bottom: 3px solid #009cff;
+  font-size: 15px;
+  background-color: #009cff;
+  color: #FFF;
+  padding: 20px;
+  height: 100%;
+}
 
 #din-bar {
   padding-left: 40px;
   background-color: #E6E6E6;
+}
+#din-bar .container {
+  position: relative;
+}
+#din-bar .fix-show {
+  display: none;
 }
 #din-bar ul li {
   font-size: 18px;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
   display: inline-block;
-  padding: 15.3846153846px 20px;
+  padding: 15.3846153846px;
 }
 #din-bar ul li.active {
   border-bottom: 3px solid black;
