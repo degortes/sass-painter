@@ -124,14 +124,14 @@ ul {
 }
 
 header {
-  background-color: #101010;
-}
-header ul li {
-  display: inline-block;
+  background-color: #e8cd69;
 }
 
+.top-head ul li {
+  display: inline-block;
+}
 .top-head ul li a {
-  color: #989898;
+  color: red;
   display: inline-block;
   padding: 15.3846153846px;
 }
@@ -150,12 +150,61 @@ header ul li {
   height: 24px;
   margin-right: 10px;
 }
+.low-head li {
+  display: inline-block;
+}
+.low-head li:hover {
+  background-color: #FFF;
+}
+.low-head li:hover .drop-down {
+  display: block;
+}
+.low-head li:hover .drop-down li:hover .drop-up {
+  display: block;
+}
 .low-head li a {
   padding: 15.3846153846px 26px;
+  color: blue;
+}
+.low-head li i {
+  color: #878787;
+}
+
+.drop-up {
+  display: none;
+  z-index: 3;
+  background-color: #FFF;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.drop-down {
+  display: none;
+  z-index: 3;
+  background-color: #FFF;
+  position: absolute;
+}
+.drop-down li {
+  padding: 15.3846153846px 26px;
+  min-width: 200px;
+  display: block;
+  font-size: 12px;
+}
+.drop-down li:hover {
+  background-color: #999;
+}
+.drop-down li:hover i {
   color: #FFF;
 }
-.low-head li a i {
-  color: #878787;
+.drop-down li i {
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.drop-down > ul > li {
+  position: relative;
 }
 
 footer .top-foot {
@@ -164,7 +213,7 @@ footer .top-foot {
 }
 footer .low-foot {
   padding: 10px 0 20px;
-  background-color: #1e1e1e;
+  background-color: #e8cd69;
 }
 footer a {
   line-height: 2;
@@ -209,15 +258,15 @@ footer .other ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  color: #999;
+  color: red;
 }
 footer .other ul li {
   line-height: 2;
   font-size: 12px;
-  padding: 10px 20px;
+  padding: 10px;
 }
 footer .other ul li a {
-  color: #FFF;
+  color: blue;
 }
 
 .instagram {
@@ -404,6 +453,10 @@ footer .other ul li a {
   display: none;
 }
 
+#tools, #dis-ai {
+  background-color: lime;
+}
+
 #dis-ai .img-container {
   margin: 80px auto;
   display: flex;
@@ -470,9 +523,8 @@ footer .other ul li a {
 }
 
 #tools .playlist {
-  margin-bottom: 80px;
   margin-top: 60px;
-  padding: 0 40px;
+  padding: 0 40px 80px;
   display: flex;
   flex-direction: row;
   justify-content: center;

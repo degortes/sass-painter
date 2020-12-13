@@ -52,9 +52,9 @@ footer {
         li {
             line-height: 2;
             font-size: $link_size;
-            padding: $main_space/2 $main_space;
+            padding: $main_space/2;
             a {
-                color: $sec_color;
+                color: $new_color;
             }
         }
     }

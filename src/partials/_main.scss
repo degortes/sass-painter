@@ -54,7 +54,7 @@
             padding: $main_space $main_space/1.3 $main_space*5;
             background-color: $jumbo_card_back;
             p {
-                color: $contact_color;
+                color: $down_color;
             }
             .btn{
                 font-size: 15px;
@@ -159,6 +159,11 @@
 
 }
 
+#tools, #dis-ai {
+    background-color: $new_back_color;
+}
+
+
 #dis-ai {
     .img-container {
         margin: $main_space*4 auto;
@@ -230,9 +235,8 @@
 
 #tools {
     .playlist {
-        margin-bottom: $main_space*4;
         margin-top: $main_space*3;
-        padding: 0 $main_space*2;
+        padding: 0 $main_space*2 $main_space*4 ;
         @include flex(row, center);
         img {
             max-height: 300px;
